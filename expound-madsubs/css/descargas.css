@@ -1,0 +1,135 @@
+.descargas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(51,153,255,0.9);
+	z-index: 100000;
+}
+
+.descargas .descargas-close {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: #ffffff;
+	outline: none;
+}
+
+.descargas-simplegenie {
+	visibility: hidden;
+	-webkit-transform: translateY(60%) scale(0);
+	transform: translateY(60%) scale(0);
+	-webkit-transition: -webkit-transform 0.4s, visibility 0s 0.4s;
+	transition: transform 0.4s, visibility 0s 0.4s;
+}
+
+.descargas-simplegenie.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%) scale(1);
+	transform: translateY(0%) scale(1);
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.descargas-button {
+	background: #3399ff;
+	background: -moz-linear-gradient(top, #3399ff 0%, #117bb8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3399ff), color-stop(100%,#117bb8));
+	background: -webkit-linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	background: -o-linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	background: -ms-linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	background: linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	font-size: 15px;
+	line-height: 40px;
+	position: relative;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+	display: block;
+	color: #000033;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.descargas-button:hover {
+	background: #3399ff;
+	color: #000033;
+	cursor: pointer;
+}
+
+.descargas-div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.episodio-button {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cccccc));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#cccccc 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#cccccc 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#cccccc 100%);
+	background: linear-gradient(top, #ffffff 0%,#cccccc 100%);
+	font-size: 15px;
+	line-height: 40px;
+	position: relative;
+	width: 120px;
+	margin: 10px;
+	padding: 0px 15px;
+	display: inline-block;
+	vertical-align: top;
+	color: #000033;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.episodio-button a {
+	display: inline-block;
+}
+
+.episodio-button:hover {
+	background: #ffffff;
+	color: #000033;
+	cursor: pointer;
+}
+
+.episodio div{
+	padding-top: 100px;
+}
+
+.versiones {
+	display: inline-block;
+	width: auto;
+}

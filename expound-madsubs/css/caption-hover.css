@@ -1,0 +1,87 @@
+.grid {
+    padding: 0px;
+    max-width: 1300px;
+    margin: 0 auto;
+	margin-bottom: 0px !important;
+    list-style: none;
+    text-align: left;
+}
+ 
+.grid li {
+    display: inline-block;
+    width: 150px;
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.grid figure {
+    margin: 0;
+	height: 200px;
+    position: relative;
+}
+
+.grid figure a div {
+    width: 150px;
+    height: 200px;
+    background-image: url(../img/not-available.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+	color: #fff;
+    padding: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.grid figcaption a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.cs-style-3 figure {
+    overflow: hidden;
+}
+
+.cs-style-3 figure a div {
+    transition: transform 0.4s;
+}
+ 
+.no-touch .cs-style-3 figure:hover div,
+.cs-style-3 figure.cs-hover div {
+    transform: translateY(-25px);
+}
+
+.cs-style-3 figcaption {
+    width: 140px;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+@media screen and (max-width: 31.5em) {
+    .grid {
+        padding: 10px 10px 100px 10px;
+    }
+    .grid li {
+        width: 100%;
+        min-width: 300px;
+    }
+}

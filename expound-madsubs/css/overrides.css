@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	font-family: Open Sans, sans-serif;
+}
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+#page {
+	margin: 0px auto;
+	}
+
+p {
+	margin-bottom: 0px;
+}
+
+/* Chatango Hyperbolic Z-Index Override */
+iframe {
+	z-index: 1000 !important;
+}
+
+.site-footer {
+	padding: 20px 40px;
+}
+
+.nivo-caption {
+	font-family: Open Sans, sans-serif !important;
+}
+
+/* Featured Content Overrides */
+
+.featured-content {
+    display: inline-block !important; /* Firefox Hotfix */
+	width: 100%;
+}
+
+.featured-content-article {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.widget-area {
+	padding-top: 20px;
+}
+
+/* 404 Page Image Center */
+#err404 {
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto;
+}
+
+#footer_text {
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto;
+	float: left;
+}
+
+#avgthreatlabs_safetybadge_small {
+	display: table-cell;
+	vertical-align: middle;
+	margin: auto;
+	float: right;
+}
+
+@keyframes "page" {
+ 0% {
+    left: 0;
+ }
+ 50% {
+    left: 10px;
+ }
+ 100% {
+    left: 0;
+ }
+
+}
+
+@-moz-keyframes page {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@-webkit-keyframes "page" {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@-ms-keyframes "page" {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@-o-keyframes "page" {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@media screen and (max-width: 32em) {
+	body { font-size: 75%; }
+}

@@ -1,0 +1,15 @@
+/*
+	* Theme Name: Expound Madness Subs
+	* Theme URI: http://www.madsubs.org
+	* Description: Child Theme of Expound for www.madsubs.org
+	* Author: Juan José Ulloa Robles
+	* Author URI: http://danubedrop.wordpress.com
+	* Template: expound
+	* Version: 0.1
+	* Text Domain: expound-madsubs
+*/
+
+@import url('css/overrides.css');
+@import url('css/search.css');
+@import url('css/modal.css');
+@import url('css/follow-sidebar.css');

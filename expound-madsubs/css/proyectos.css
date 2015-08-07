@@ -1,0 +1,199 @@
+.proyecto {
+	overflow: hidden;
+	text-align: center;
+	padding: 30px;
+}
+
+.proyecto h1 {
+	text-align: left;
+}
+
+.imagen_proyecto {
+	display: inline-block;
+}
+
+.info_proyecto {
+	display: inline-block;
+}
+
+.info_proyecto_tabs {
+    position: relative;
+	margin: 0px 0px;
+	width: 550px;
+}
+
+.info_proyecto_tabs input {
+	position: absolute;
+	z-index: 100;
+	width: 150px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor: pointer;
+}
+.info_proyecto_tabs input#info_proyecto_tab-2{
+	left: 150px;
+}
+.info_proyecto_tabs input#info_proyecto_tab-3{
+	left: 300px;
+}
+
+.info_proyecto_tabs label {
+	background: #3399ff;
+	background: -moz-linear-gradient(top, #3399ff 0%, #117bb8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3399ff), color-stop(100%,#117bb8));
+	background: -webkit-linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	background: -o-linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	background: -ms-linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	background: linear-gradient(top, #3399ff 0%,#117bb8 100%);
+	font-size: 15px;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	padding: 0px;
+    float: left;
+	display: block;
+	width: 150px;
+	color: #000033;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.info_proyecto_tabs label:after {
+    content: '';
+	background: #fff;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	display: block;
+}
+
+.info_proyecto_tabs input:hover + label {
+	background: #3399ff;
+}
+
+.info_proyecto_tabs label:first-of-type {
+    z-index: 4;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+}
+
+.info_proyecto_tab-label-2 {
+    z-index: 3;
+}
+
+.info_proyecto_tab-label-3 {
+    z-index: 2;
+}
+
+.info_proyecto_tab-label-4 {
+    z-index: 1;
+}
+
+.info_proyecto_tabs input:checked + label {
+    background: #fff;
+	z-index: 6;
+	
+    -webkit-animation: page 0.2s linear;
+    -moz-animation: page 0.2s linear;
+    -ms-animation: page 0.2s linear;
+    -o-animation: page 0.2s linear;
+    animation: page 0.2s linear;
+}
+
+.info_proyecto_content {
+    background: #fff;
+	position: relative;
+    width: 100%;
+	height: 450px;
+	z-index: 5;
+	overflow: hidden;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 3px 3px 3px;
+}
+
+.info_proyecto_content div {
+    position: absolute;
+	height: 100%;
+	top: 0;
+	padding: 10px 10px 10px 0px;
+	z-index: 1;
+    opacity: 0;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+	border-left: 8px solid rgba(63,148,148, 0.1);
+}
+
+.info_proyecto_content-1, .info_proyecto_content-3 {
+	-webkit-transform: translateX(-250px);
+	-moz-transform: translateX(-250px);
+	-o-transform: translateX(-250px);
+	-ms-transform: translateX(-250px);
+	transform: translateX(-250px);
+}
+
+.info_proyecto_content-2 {
+    -webkit-transform: translateX(250px);
+	-moz-transform: translateX(250px);
+	-o-transform: translateX(250px);
+	-ms-transform: translateX(250px);
+	transform: translateX(250px);
+}
+
+.info_proyecto_tabs input.info_proyecto_tab-selector-1:checked ~ .info_proyecto_content .info_proyecto_content-1,
+.info_proyecto_tabs input.info_proyecto_tab-selector-2:checked ~ .info_proyecto_content .info_proyecto_content-2,
+.info_proyecto_tabs input.info_proyecto_tab-selector-3:checked ~ .info_proyecto_content .info_proyecto_content-3{
+    -webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition: all ease-out 0.2s 0.1s;
+    -moz-transition: all ease-out 0.2s 0.1s;
+    -o-transition: all ease-out 0.2s 0.1s;
+    -ms-transition: all ease-out 0.2s 0.1s;
+    transition: all ease-out 0.2s 0.1s;
+}
+
+.info_proyecto_content div h2,
+.info_proyecto_content div h3{
+	color: #398080;
+}
+.info_proyecto_content div p {
+	font-size: 16px;
+	line-height: 22px;
+	font-style: normal;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 0;
+	color: #777;
+	padding-left: 15px;
+}
+
+.descargas-proyecto {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-block;
+	text-align: center;
+}
+
+.clear-shadow {
+	clear: both;
+}
